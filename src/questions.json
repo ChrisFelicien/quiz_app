@@ -1,0 +1,52 @@
+{
+  "questions": [
+    {
+      "question": "Quelle est la capital de la RDC?",
+      "options": [
+        "Lusaka",
+        "Kinshasa",
+        "Lubumbashi",
+        "Kananga",
+        "Matadi",
+        "Goma"
+      ],
+      "correct": "Kinshasa"
+    },
+    {
+      "question": "Quelle est la date de l'independence de la RDC?",
+      "options": [
+        "30 Juin 1960",
+        "2 Juillet 2002",
+        "21 Mai 1997",
+        "4 Janvier 2001",
+        "17 Janvier 19961",
+        "Aucune"
+      ],
+      "correct": "30 Juin 1960"
+    },
+    {
+      "question": "Qui est le president de la RDC?",
+      "options": [
+        "L.D Kabila",
+        "Joseph Kabila",
+        "Patrice E. Lumumba",
+        "Felix Tshisekedi",
+        "Joseph Kabila",
+        "Moise Katumbi"
+      ],
+      "correct": "Felix Tshisekedi"
+    },
+    {
+      "question": "Quelle est la monnaie la RDC?",
+      "options": [
+        "Euro",
+        "Franc congolais",
+        "Dollar",
+        "Kwanza",
+        "Chilling",
+        "Rand"
+      ],
+      "correct": "Franc congolais"
+    }
+  ]
+}
