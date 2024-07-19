@@ -1,8 +1,16 @@
 import Button from "./Button";
 import Options from "./Options";
 import Progress from "./Progress";
+import Timer from "./Timer";
 
-const Quiz = ({ currentQuestion, dispatch, userAnswer, index, questions }) => {
+const Quiz = ({
+  currentQuestion,
+  dispatch,
+  userAnswer,
+  index,
+  questions,
+  remainTime,
+}) => {
   const { question, options, correct } = currentQuestion;
 
   const point = correct === userAnswer ? 1 : 0;
@@ -13,7 +21,7 @@ const Quiz = ({ currentQuestion, dispatch, userAnswer, index, questions }) => {
       <p className='text-xl text-center mb-10'>{question}</p>
       <Options options={options} dispatch={dispatch} userAnswer={userAnswer} />
       <div className='py-12 flex justify-between px-16'>
-        <button>5:00</button>
+        <Timer remainTime={remainTime} dispatch={dispatch} />
         {userAnswer && (
           <Button
             text={questions.length > index + 1 ? "Next" : "Finish"}

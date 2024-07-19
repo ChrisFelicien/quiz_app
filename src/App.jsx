@@ -16,11 +16,14 @@ const initialState = {
   index: 0,
   userAnswer: null,
   correctAnswer: 0,
+  remainTime: null,
 };
 
 const App = () => {
-  const [{ questions, status, index, userAnswer, correctAnswer }, dispatch] =
-    useReducer(reducer, initialState);
+  const [
+    { questions, status, index, userAnswer, correctAnswer, remainTime },
+    dispatch,
+  ] = useReducer(reducer, initialState);
   const numQuestion = questions.length;
 
   // useEffect(() => {
@@ -55,6 +58,7 @@ const App = () => {
             userAnswer={userAnswer}
             index={index}
             questions={questions}
+            remainTime={remainTime}
           />
         )}
         {status === "finish" && (
